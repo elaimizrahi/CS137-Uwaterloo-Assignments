@@ -1,0 +1,48 @@
+Last login: Wed Nov  9 22:41:56 on ttys004
+elai@v1040-wn-rt-a-60-96 ~ % ssh -X emizrahi@linux.student.cs.uwaterloo.ca
+(emizrahi@linux.student.cs.uwaterloo.ca) Password: 
+emizrahi@ubuntu2004-010:~$ mkdir cs137
+mkdir: cannot create directory ‘cs137’: File exists
+emizrahi@ubuntu2004-010:~$ cd cs137
+emizrahi@ubuntu2004-010:~/cs137$ nano hello.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  GNU nano 4.8                        hello.c                         Modified  
+ #include <stdio.h>
+ #include <assert.h>
+ #include <stdlib.h>
+
+ 
+
+ int **split(int a[], int n, int p, int *len1, int *len2){
+
+    int count1 = 0;
+    int count2 = 0;
+
+    int **split = (int**)malloc(2 * sizeof(int));
+    assert(split);
+
+    
+
+    for(int i = 0; i < n; i++){
+        if(a[i] <= p){
+            count1++;
+        }
+
+^G Get Help  ^O Write Out ^W Where Is  ^K Cut Text  ^J Justify   ^C Cur Pos
+^X Exit      ^R Read File ^\ Replace   ^U Paste Text^T To Spell  ^_ Go To Line
